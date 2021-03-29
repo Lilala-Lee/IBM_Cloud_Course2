@@ -1,16 +1,24 @@
+<!doctype html>
 <html>
     <head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <title>Simple Interest Calculator</title>
     </head>
     <body>
+        <divclass="maindiv">
         <h1>Simple Interest Calculator</h1>
 
         Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
+        Rate <input type="range"  id="rate" min="1" max="20" value="10.25" step="0.25"> <span "10.25 %"></span> <br/>
+        No. of Years <input type="number" selectBoxOptions="1,2,3,4,5,6,7,8,9,10"> <br/>
         Interest : <span id="result"></span><br>
 
-        <button onclick="compute()">Compute</button>
+        <button onclick="compute()">Compute Interest</button><br>
+        <span id="result"></span><br>
+        </div>
+         <footer>
+          <p>Author: Mia Li</p>
+        </footer> 
     </body>
 </html>
